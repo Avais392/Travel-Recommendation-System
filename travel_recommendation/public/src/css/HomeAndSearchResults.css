@@ -1,0 +1,159 @@
+html, body
+{
+    height: 100%;
+}
+
+
+.navbar
+{
+    margin-bottom: 0px;
+}
+
+#mainBody
+{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    height: 100%;
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: cover;
+    color: lightgrey;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000000;
+    z-index: 1;
+}
+
+#mainBody header
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#mainBody .content
+{
+    background: rgba( 0, 0, 0, 0.7 );
+    padding: 5px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+hr
+{
+    margin: 10px;
+}
+
+
+#searchField
+{
+    margin-bottom: 0;
+}
+
+#searchDropdown
+{
+    position: absolute;
+    border: 2px solid #d3d3d3;
+    border-top: none;
+    padding-top: 5px;
+    margin-top: -3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #d4d4d4;
+    z-index: 100;
+    width: 100%;
+}
+
+#searchWidgetWrapper
+{
+    position: relative;
+    padding: 0;
+}
+
+.loader {
+    display: inline-block;
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.resultRow
+{
+    display: block;
+    color: #d4d4d4;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+}
+
+.checked
+{
+    color: orange;
+}
+
+.ratingSection
+{
+    padding-left: 5px;
+}
+
+#filtersLabel
+{
+    margin-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    color: #8a6d3b;
+}
+
+#filtersLabel:hover
+{
+    border-radius: 10px;
+    background: none;
+
+    animation-name: filtersLabelHover;
+    animation-duration: 1s;
+}
+
+@keyframes filtersLabelHover {
+    from {
+        background: lightsteelblue;
+    }
+
+    to
+    {
+        background: none;
+    }
+}
+
+#filterDropdownArrow
+{
+    position: relative;
+    top: 2px;
+    left: -1px;
+}
+
+#filtersSection
+{
+    color: #8a6d3b;
+    font-size: 80%;
+    font-style: italic;
+}
+
+.ui-widget-header
+{
+    background: #8a6d3b;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+{
+    border: 1px solid #8a6d3b;
+    background: #5e5d5d;
+    font-weight: normal;
+    color: #454545;
+}

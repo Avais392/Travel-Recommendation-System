@@ -1,0 +1,96 @@
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    /*
+     background: url( '../background.jpg' ) top left no-repeat;
+     background-size: cover;
+     */
+}
+
+#firstPortion
+{
+    padding-top: 50px;
+    height: 70vh;
+    background-position: top left;
+    color: white;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000000;
+}
+
+#firstPortion header
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#firstPortion .userTitleInfoContainer
+{
+    background: rgba( 0, 0, 0, 0.7 );
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+#userName
+{
+    font-family: Helvetica;
+    letter-spacing: 2px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+{
+    border: 1px solid #333333;
+    border-bottom: 0;
+}
+
+.nav-tabs>li>a:hover
+{
+    background: #333333;
+    color: white;
+    border-bottom: 1px solid #333333;
+}
+
+#details p
+{
+    margin-bottom: 0;
+}
+
+.nav-tabs
+{
+    border-bottom: 1px solid #333333;
+}
+
+.leftListing
+{
+    border-right: 1px solid #d4d4d4;
+}
+
+
+.listingPic
+{
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    margin-right: 5px;
+}
+
+.listingDetail
+{
+    display: inline-block;
+    height: 100%;
+    width: 55%;
+}
+
+#listings .col-sm-6
+{
+    margin-bottom: 5px;
+}
+
+.checked
+{
+    color: orange;
+}
